@@ -8,16 +8,69 @@ body{
     min-height: 100vh;
     background: url(img/bg/main.jpg) no-repeat center center/cover;
 }
+.top_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+    letter-spacing: 1.2px;
+    box-shadow: 0 2px 10px 	#B8A9C9;
+    background-color: #a145cc;
+    padding: 8px 25px;
+}
+.Hotline{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.top_header .Hotline a{
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 3px 15px;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    transition: all 0.9s ease;
+    white-space: nowrap;
+
+}
+.top_header .Hotline a:hover{
+    color: #162530;
+    background: #D1B3FF;
+    border: 2px solid #fff;
+}
+.login{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.login a{
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 3px 15px;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    transition: all 0.9s ease;
+    white-space: nowrap;
+
+}
+.login a:hover{
+    color: #162530;
+    background: #D1B3FF;
+    border: 2px solid #fff;
+}
+.icon{
+height:20px;
+}
 .navbar {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50px;
+    height: 80px;
     width: 100%;
     position: sticky;
     top: 0;
     background: transparent;
-    box-shadow: 0 10px 20px black;
+    box-shadow: 0 20px 50px black;
     backdrop-filter: blur(10px);
     z-index: 999;
 }
@@ -27,14 +80,14 @@ body{
     justify-content: space-between;
     width: 100%;
     padding: 0 2rem;
-    max-width: 1600px;
+    /* max-width: 1600px; */
 }
-.navbar-logo{
-    font-size: 2rem;
-    font-weight: 600;
-    color: whitesmoke;
-    text-decoration: none;
-    cursor: pointer;
+.navbar-container .logo{
+    display: flex;
+    align-items: center;
+    height: 70px;
+    box-shadow: 0 2px 8px #D1B3FF;
+
 }
 .navbar-container .navbar-menu{
     display: flex;
@@ -49,7 +102,7 @@ body{
 .navbar-container .navbar-menu li a{
     text-decoration: none;
     color:whitesmoke;
-    font-size: 1rem;
+    font-size: 20px;
     font-weight: 500;
     padding: 3px 15px;
     border-radius: 20px;
@@ -85,7 +138,7 @@ body{
         backdrop-filter: none;
     }
     .navbar-container .navbar-menu{
-        /* display: none; */
+        display: none;
         flex-direction: column;
         align-items: flex-start;
         gap: 1.7rem !important;
